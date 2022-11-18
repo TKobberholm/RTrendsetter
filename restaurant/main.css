@@ -1,0 +1,323 @@
+/* FONTS + HEXCODES
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+*/
+
+:root {
+    --black: #000000;
+    --lightblack: #333;
+    --transparent: transparent;
+    --white: #fffef8;
+    --lightwhite: honeydew;
+    --green: #68bb59;
+  }
+  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        var(--black),
+        var(--transparent),
+        var(--black)
+      ),
+      url("images/ruben-ramirez-xhKG01FN2uk-unsplash-min.png") no-repeat center center /
+        cover;
+    background-attachment: fixed;
+    color: var(--lightwhite);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--lightwhite);
+}
+
+/* TYPO */
+h1 {
+    font-size: 3.5rem;
+}
+
+/* NAVIGATION - NADJA */
+.topnav ul {
+    float: right;
+}
+
+.topnav li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu {
+    width: 100%;
+    padding: 3%;
+}
+.menu ul {
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu a {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* HERO SECTION - NADJA */
+.hero {
+    width: 100%;
+    height: 390px;
+    margin-top: 100px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 30px;
+}
+
+.btn {
+    color: var(--white);
+    font-size: 1.3rem;
+    background-color: var(--green);
+    border: none;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
+
+/* MEALS + MENU SECTION - xnavnx */
+.focusedmeals {
+    background: linear-gradient(
+        180deg,
+        var(--black),
+        var(--transparent),
+        var(--black)
+      ),
+      url("images/thibault-penin-uqd-Eq1_TtE-unsplash-min.png") no-repeat center center /
+        cover;
+    background-attachment: fixed;
+    height: 730px;
+}
+
+.focusedmeals h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.col {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+    padding: 50px;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);*/
+    border-radius: 10px;
+    padding: 16px;
+    height: 75vh;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.menupage h1 {
+    text-align: center;
+}
+
+/* BOOKING SECTION */
+.booking {
+    color: var(--light-black);
+    display: flex;
+    text-align: middle;
+    font-size: 1rem;
+    height: 600px;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+/* LOGIN SECTION */
+.login {
+    max-width: 440px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  
+  .wrapper-brugerlogin {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+  
+  .wrapper-brugerlogin .title {
+    height: 80px;
+    background: var(--white);
+    border-radius: 5px 5px 0 0;
+    color: var(--green);
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper-brugerlogin form {
+    padding: 30px 25px 25px 25px;
+  }
+  
+  .wrapper-brugerlogin form .row-brugerlogin {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .wrapper-brugerlogin form .row-brugerlogin input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px var(--lightwhite);
+    border-bottom: 2px solid #adadad;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  form .row-brugerlogin input:focus {
+    border-color: var(--green);
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+  }
+  
+  form .row-brugerlogin input::placeholder {
+    color: var(--lightblack);
+  }
+  
+  .wrapper-brugerlogin form .row-brugerlogin i {
+    position: absolute;
+    color: var(--lightwhite);
+    font-size: 2rem;
+    background: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  
+  .wrapper-brugerlogin form .btn-log input {
+    color: var(--lightwhite);
+    font-size: 1.5rem;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    background: var(--green);
+    border: 8px solid var(--green);
+    cursor: pointer;
+  }
+  
+  form .btn-log input:hover {
+    background: darkgreen;
+    border: 8px solid darkgreen;
+  }
+
+/* BESTILLINGER */
+.cardbestil {
+    background-color: rgba(0, 0, 0, 0.6);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);*/
+    border-radius: 10px;
+    padding: 16px;
+    height: 35vh;
+    text-align: center;
+}
+
+/* FOOTER SECTION - NADJA & EMRE*/
+footer {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(
+        180deg,
+        var(--black),
+        var(--transparent),
+        var(--black)
+      );
+
+}
+.col-footer {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.row-footer {
+    margin: 0 -5px;
+    padding: 50px;
+    width: 100%;
+}
+
+.row-footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+    .col {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-footer {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-top:20px
+    }
+}
